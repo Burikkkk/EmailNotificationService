@@ -10,6 +10,20 @@
 # Запуск с помощью Docker
 docker compose up --build
 ```
+Доступные сервисы и порты:
+
+- **auth-service:** http://localhost:8080
+
+- **notification-service:** http://localhost:8081
+
+- **Swagger API auth-service:** http://localhost:8080/swagger-ui.html
+
+- **MailHog:** http://localhost:8025
+
+- **RabbitMQ Management:** http://localhost:15672
+
+- **MySQL:** localhost:3307
+  
 ## Тестовые пользователи
 
 | Роль  | Имя пользователя | Пароль     | Email             |
