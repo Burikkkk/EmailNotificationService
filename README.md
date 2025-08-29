@@ -28,7 +28,7 @@ docker compose up --build
 
 Откройте http://localhost:8080/swagger-ui.html
 
-Там можно тестировать все эндпоинты auth-service прямо из браузера.
+Swagger позволяет тестировать все эндпоинты auth-service прямо из браузера.
 
 ## Использование MailHog
 
