@@ -43,7 +43,7 @@ public class UserService {
                 .email(request.getEmail())
                 .firstName(request.getFirstName())
                 .lastName(request.getLastName())
-                .role(request.getRole())
+                .role(Role.USER)
                 .build();
 
         User saved = userRepository.save(user);
