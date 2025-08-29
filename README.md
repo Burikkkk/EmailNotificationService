@@ -48,7 +48,7 @@ TOKEN_ADMIN=$(curl -s http://localhost:8080/api/auth/login -H 'Content-Type: app
 
 # USER меняет свои данные
 curl -X PUT http://localhost:8080/api/profile \
--H "Authorization: $USER_TOKEN" \
+-H "Authorization: $TOKEN_USER" \
 -H "Content-Type: application/json" \
 -d '{
     "username": "newData",
