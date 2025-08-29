@@ -40,8 +40,8 @@ services:
     container_name: mailhog
     restart: always
     ports:
-      - "1025:1025"   # SMTP порт
-      - "8025:8025"   # веб-интерфейс
+      - "1025:1025"
+      - "8025:8025"
     healthcheck:
       test: [ "CMD", "nc", "-z", "localhost", "1025" ]
       interval: 10s
