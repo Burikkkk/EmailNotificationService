@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
-@Slf4j // <- для логирования
+@Slf4j
 public class AdminController {
 
     private final UserService userService;

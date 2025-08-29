@@ -13,11 +13,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/profile")
 @RequiredArgsConstructor
-@Slf4j // <- для логирования
+@Slf4j
 public class UserController {
 
     private final UserService userService;
-    private final CustomUserDetailsService userDetailsService;
 
     @GetMapping
     public ResponseEntity<UserDto> getMyProfile(Authentication authentication) {

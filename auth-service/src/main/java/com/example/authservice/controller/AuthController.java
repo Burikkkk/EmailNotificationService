@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
-@Slf4j // <- для логирования
+@Slf4j
 public class AuthController {
 
     private final AuthenticationManager authenticationManager;
