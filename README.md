@@ -94,3 +94,9 @@ curl -X DELETE http://localhost:8080/api/users/id \
 curl -X GET http://localhost:8080/api/users \
 -H "Authorization: $TOKEN_ADMIN"
 ```
+
+## Остановка
+```bash
+# Остановка контейнеров с помощью Docker
+docker-compose down
+```
