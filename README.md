@@ -23,6 +23,19 @@ docker compose up --build
 - **RabbitMQ Management:** http://localhost:15672
 
 - **MySQL:** localhost:3307
+
+## Использование Swagger
+
+Откройте http://localhost:8080/swagger-ui.html
+
+Там можно тестировать все эндпоинты auth-service прямо из браузера.
+
+## Использование MailHog
+
+MailHog имитирует SMTP-сервер для тестов.
+
+Все письма, которые отправляет notification-service, можно посмотреть здесь: http://localhost:8025
+
   
 ## Тестовые пользователи
 
