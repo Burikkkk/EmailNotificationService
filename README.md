@@ -1,13 +1,13 @@
-# User System (Java, Spring Boot, JWT, RabbitMQ, Docker)
+# Email Notification System
 
 Два микросервиса:
 - **auth-service** — аутентификация/авторизация, CRUD пользователей (MySQL, Flyway, JWT, Spring Security, Lombok, Swagger).
 - **notification-service** — слушает события (RabbitMQ) и отправляет email‑уведомления администраторам через MailHog (тестовый SMTP).
 
 ## Запуск
-
+Перед запуском необходимо поместить файл .env в корень проекта.
 ```bash
-# С помощью Docker
+# Запуск с помощью Docker
 docker compose up --build
 ```
 ## Тестовые пользователи
@@ -61,7 +61,7 @@ curl -X PUT http://localhost:8080/api/profile \
 
 # ADMIN удаляет пользователя по id
 curl -X DELETE http://localhost:8080/api/users/id \
--H "Authorization: $TOKEN"
+-H "Authorization: $TOKEN_ADMIN"
 
 # ADMIN получает список всех
 curl -X GET http://localhost:8080/api/users \
